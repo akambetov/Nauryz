@@ -1,0 +1,63 @@
+@import 'fonts.css';
+body, 
+* {
+  margin: 0;
+}
+body {
+  background-image: url('../bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content__header {
+  font-family: Marta, serif;
+  font-size: 24px;
+  color: rgb(245, 140, 143);
+  margin-bottom: 10px;
+}
+.content__wish {
+  font-family: 'Glacial Indifference';
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  color: rgb(0, 128, 55)
+}
+.content__wish-from {
+  text-align: right;
+  color: rgb(245, 140, 143);
+}
+.social {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+.social__item img{
+  width: 40px;
+  height: 40px;
+}
+.social__item img:first-child {
+  margin-right: 10px;
+}
+
+@media screen and (max-width:510px) {
+  body {
+    background-image: url('../bg-mobile.png');
+  }
+  .content__header {
+    width: 250px;
+    text-align: center;
+  }
+}
