@@ -44,12 +44,31 @@ body {
   align-self: flex-end;
   margin-top: 10px;
 }
-.social__item img{
+.social__item img {
   width: 40px;
   height: 40px;
 }
 .social__item img:first-child {
   margin-right: 10px;
+}
+
+.play-pause {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.play-pause:hover {
+  background-color: rgb(245, 140, 143);
+}
+#play {
+  background-image:url('../icons/play.svg');
+}
+#pause {
+  background-image:url('../icons/pause.svg');
 }
 
 @media screen and (max-width:510px) {

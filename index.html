@@ -9,10 +9,6 @@
   <title>Document</title>
 </head>
 <body>   
-  <audio controls src="./sound/nauryz.mp3">
-      Your browser does not support the
-      <code>audio</code> element.
-  </audio>
 
   <div class="container">
     <div class="content">
@@ -36,7 +32,18 @@
           <div class="social__item">
             <a href="https://www.instagram.com/dnk_corp_kz/" target="_blank"><img src="./icons/fb.png" alt="Instagram"></a></div>
         </div>
+
+        <div class="audio">
+          <audio id="audio" src="./sound/nauryz.mp3" loop>
+              Your browser does not support the
+              <code>audio</code> element.
+          </audio>
+          <button class="play-pause" id="play" type="button"></button>
+          <button class="play-pause" id="pause" type="button"></button>
+        </div>
     </div>
   </div>
+
+  <script src="./scripts/audio.js"></script>
 </body>
 </html>
