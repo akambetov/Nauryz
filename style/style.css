@@ -60,6 +60,7 @@ body {
   cursor: pointer;
   background-color: transparent;
   border-radius: 50%;
+  transition: all .3s ease;
 }
 .play-pause:hover {
   background-color: rgb(245, 140, 143);
