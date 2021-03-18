@@ -8,6 +8,7 @@ audioPause.addEventListener('click', pause);
 
 function play() {
     audio.play();
+    alert(navigator.platform);
 }
 
 function pause() {
